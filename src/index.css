@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.my-products {
+  margin: 10px;
+  /* padding: 10px; */
+}
+
+.productList {
+  border: 3px solid rgb(199, 199, 243);
+  border-radius: 10px;
+  width: 100%;
+  height: 78vh;
+  padding: 10px;
+  overflow-y: scroll;
+  background: hsl(var(--hue), 20%, 70%);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  height: 450px;
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.product-container {
+  margin: 12px;
+}
+
+.product:hover {
+  background-color: rgb(179, 249, 249);
+}
+
+.product:active {
+  background-color: rgb(171, 204, 232);
+}
+
+.prodImg {
+  height: 200px;
+  width: 190px;
+  border: 1 px solid transparent;
+  border-radius: 20px;
+  align-content: center;
+  padding: 20px;
+}
+
+.selectedProduct {
+  width: 100%;
+  border-radius: 10px;
+  float: right;
+  align-content: center;
+  padding: 10px;
+}
+
+.checkOut-btn:hover {
+  background-color: rgb(166, 218, 218);
+}
+
+.checkOut-btn:active {
+  background-color: black(35, 21, 66);
+}
+
+.arrow-right {
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.header {
+  text-align: center;
+  font-family: hover;
+  font-size: 40px;
+  float: left;
+  color: ;
+}
+.cart {
+  margin-bottom: 5px;
+  font-size: 20px;
+  float: right;
+  padding: 4px 10px;
+  align-content: center;
+  cursor: pointer;
+}
+
+.product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(46, 41, 41);
+}
+
+.header-items {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  position: relative;
+}
+
+.header-item {
+  margin-right: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.product-counter {
+  display: flex;
+}
+
+.product-counter-label {
+  padding: 5px;
+}
+
+.cart-list {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  top: 50px;
+  height: 86vh;
+  background-color: white;
+  width: 380px;
+  border-left: 1px solid #e2e2e2;
+  background-color: rgb(197, 241, 227);
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+
+.cart-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #82e9ec;
+  border-radius: 0.5rem;
+}
+
+.cart-list-items {
+  height: 70vh;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.cart-list-footer {
+  border-top: 1px solid gray;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-item-in-cart {
+  margin-top: 150px;
+  color: black;
+  text-align: center;
+}
+
+/*Cart count*/
+.badge {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 10px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.checkout-btn,
+.product-add-button {
+  background-color: rgb(243, 243, 192);
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover,
+.product-add-button:hover {
+  background-color: rgb(170, 205, 205);
+}
+
+/* Increment Decrement Btn */
+.inc-dec-btn {
+  padding: 5px 0px;
+  background-color: rgb(213, 215, 215);
+  border-radius: 10px;
+}
+
+.incrementItem,
+.decrementItem {
+  border-radius: 5px;
+  margin: -2px 10px;
+  cursor: pointer;
+}
+
+.item-count {
+  color: #000;
+}

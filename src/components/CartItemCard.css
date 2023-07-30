@@ -1,0 +1,26 @@
+.cartItemList {
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  background-color: cadetblue;
+}
+
+.cartItemCard {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.cartItemImg {
+  height: 50px !important;
+  width: 35px !important;
+}
+
+.cart-item-price{
+    margin-left: 20px;
+}
+
+.inc-dec-block{
+    margin-left: 25px;
+}
