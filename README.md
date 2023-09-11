@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# E-commerce demo
+
+https://github.com/gwadhawan132/E-commerce_with_react/assets/104711533/d811876f-92ca-492c-85cb-68b6a2a8ae48
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
